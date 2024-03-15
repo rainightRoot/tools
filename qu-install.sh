@@ -88,9 +88,9 @@ if [[ $cpu_model == *"Intel(R) Xeon(R) Platinum"* ]]; then
     # 设置 AVX2:true, AVX512:false
     avx2=true
     avx512=false
-    service qli stop
+    systemctl stop qli.service
     jq '.Settings += {useAvx2:true}' /q/appsettings.json > out.tmp && cat out.tmp > /q/appsettings.json && rm out.tmp
-    service qli start
+    systemctl start qli.service
 else
     echo "CPU model is not Intel Xeon"
     # 不设置 AVX2 和 AVX512
