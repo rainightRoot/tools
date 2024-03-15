@@ -83,7 +83,7 @@ systemctl stop qli
 cpu_model=$(cat /proc/cpuinfo | grep "model name" | uniq | awk -F ": " '{print $2}')
 
 # 判断 CPU 型号是否包含 "Intel(R) Xeon(R)"
-if [[ $cpu_model == *"Intel(R) Xeon(R)"* ]]; then
+if [[ $cpu_model == *"Intel(R) Xeon(R) Platinum"* ]]; then
     echo "CPU model is $cpu_model"
     # 设置 AVX2:true, AVX512:false
     avx2=true
