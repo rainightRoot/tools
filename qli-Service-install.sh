@@ -18,7 +18,7 @@ minerAlias=$3
 #public settings
 currentPath=`pwd`
 path=/q
-package=qli-Client-1.8.9-Linux-x64.tar.gz
+package=qli-Client-1.8.8-Linux-x64.tar.gz
 executableName=qli-Client
 serviceScript=qli-Service.sh
 servicePath=/etc/systemd/system
