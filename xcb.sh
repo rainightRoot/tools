@@ -8,7 +8,8 @@ sudo rm /etc/systemd/system/qli.service
 sudo systemctl daemon-reload
 sudo rm -R /q
 sudo rm /var/log/qli.log
-ip=$0
+ip=$1
+echo $ip
 mkdir /opt/xcb
 cd /opt/xcb
 sudo apt update -y
