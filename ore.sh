@@ -1,6 +1,6 @@
-echo 1 |curl https://sh.rustup.rs -sSf | sh
-source "$HOME/.cargo/env"
-
+# echo 1 |curl https://sh.rustup.rs -sSf | sh
+# source "$HOME/.cargo/env"
+apt install cargo -y
 sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
 
 cargo install ore-cli
