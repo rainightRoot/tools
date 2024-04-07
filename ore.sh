@@ -1,4 +1,5 @@
-curl https://sh.rustup.rs -sSf | sh
+echo 1 |curl https://sh.rustup.rs -sSf | sh
+source "$HOME/.cargo/env"
 
 sh -c "$(curl -sSfL https://release.solana.com/v1.18.4/install)"
 
