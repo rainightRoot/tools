@@ -21,7 +21,7 @@ chmod +x ~/ore.sh
 
 screen -S ore
 
-sh ore.sh
+./ore.sh &
 
 # tee <<EOF >/dev/null /etc/systemd/system/ore.service
 # [Unit]
