@@ -12,7 +12,7 @@ for((i=1;i<=100000;i++));
 
 do
 
-/root/.cargo/bin/ore --rpc https://api.mainnet-beta.solana.com --keypair ~/.config/solana/id.json --priority-fee 1 mine --threads 10
+/root/.cargo/bin/ore --rpc https://muddy-empty-panorama.solana-mainnet.quiknode.pro/d42fd4a81ef3f53936703976642178208a1812e2/ --keypair ~/.config/solana/id.json --priority-fee 1 mine --threads 10
 
 done
 EOF
