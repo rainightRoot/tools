@@ -15,7 +15,7 @@ rm -rf ~/miniconda3/miniconda.sh
 
  cd Llama-Chinese
 
- pip install -r requirements.txt -y
+ pip install -r requirements.txt
 
  pip install flash_attn
 
