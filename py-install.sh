@@ -5,7 +5,7 @@ rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
  /root/.zshrc
-
+sudo apt install lrzsz -y
  rm -rf Llama-Chinese
  git clone https://github.com/LlamaFamily/Llama-Chinese.git
 
