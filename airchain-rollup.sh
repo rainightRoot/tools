@@ -158,7 +158,7 @@ go run cmd/main.go init \
     --daKey "$dakey" \
     --daType "eigen" \
     --moniker "$moniker" \
-    --stationRpc "http://127.0.0.1:26657" \
+    --stationRpc "http://127.0.0.1:14257" \
     --stationAPI "http://127.0.0.1:1317" \
     --stationType "wasm"
 
