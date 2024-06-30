@@ -7,7 +7,7 @@ sudo wget -O aleo-pool-prover http://192.168.6.115/aleo-pool-prover
 sudo chmod +x aleo-pool-prover
 ip= ip addr | awk '/^[0-9]+: / {}; /inet.*global/ {print gensub(/(.*)\/(.*)/, "\\1", "g", $2)}' 
 array=(`echo $ip | tr '\n' ' '` ) 
-ip_ = ${array[0]/./_}
+ip_=${array[0]/./_}
 sudo tee <<EOF >/dev/null /etc/systemd/system/aleo.service
 [Unit]
 Description=runners
