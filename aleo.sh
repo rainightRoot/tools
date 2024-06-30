@@ -14,13 +14,13 @@ Description=runners
 After=network-online.target
 [Service]
 User=root
-ExecStart=~/aleo-pool-prover --account equinox --pool wss://aleo.zklion.com:3777 --worker-name work-yidong-ip_
+ExecStart=~/aleo-pool-prover --account equinox --pool wss://aleo.zklion.com:3777 --worker-name work-yidong-${ip_}
 Restart=on-failure
 RestartSec=3
 LimitNOFILE=4096
 [Install]
 WantedBy=multi-user.target
 EOF
-sudo systemctl enable runners
+sudo systemctl enable aleo
 sudo systemctl daemon-reload
-sudo systemctl restart runners
+sudo systemctl restart aleo
