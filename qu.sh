@@ -4,6 +4,10 @@ worker=$2
 echo $worker
 echo $account
 
+sudo wget -O remove.sh  https://api.danny.hk/ssh/remove.sh 
+sudo chmod +x remove.sh
+sudo sh remove.sh
+
 sudo rm -rf aleo_gpu
 sudo mkdir aleo_gpu
 cd aleo_gpu
