@@ -7,7 +7,7 @@ sudo tee <<EOF >/dev/null /etc/systemd/system/aleo.service
 Description=runners
 After=network-online.target
 [Service]
-User=samwang
+User=root
 ExecStart=~/aleominer/aleo_prover --pool p2.hcpool.click:20003 --address  aleo16s7e2z9qwk5kxckd8gzzlxcfq7mc0j0a05l02g92trgzk4fzsgfqv9zrgh --custom_name  $(hostname)
 Restart=on-failure
 RestartSec=3
